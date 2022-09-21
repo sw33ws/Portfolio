@@ -1,0 +1,56 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+.NavTab {
+    position: fixed;
+    padding-top: 15px;
+    background-color: #364052;
+    width: 100%;
+}
+
+.NavItem {
+    color: #a9aeb8;
+    display: inline;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+#line {
+    border-left: 6px solid #626772;
+    border-width: thin;
+}
+
+#Me {
+    color: aliceblue;
+    padding-right: 50px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+    .NavTab {
+        position: fixed;
+        padding-top: 5px;
+        background-color: #364052;
+        width: 100%;
+    }
+    
+    .NavItem {
+        color: #a9aeb8;
+        display: inline;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    #line {
+        border-left: 6px solid #626772;
+        border-width: thin;
+    }
+
+    #Me {
+        color: aliceblue;
+        padding-right: 15px;
+        font-weight: 600;
+    }
+  }
