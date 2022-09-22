@@ -1,7 +1,85 @@
 #workbackground {
-    background-color: #131822;
+    background-color: #191e29;
 }
 
-.test {
+.title {
+    margin-top: 100px;
     color: aliceblue;
+    font-size: 50px;
+    text-align: center;
 }
+
+.text {
+    color: #a9aeb8;
+    padding-top: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#expand {
+    background-color: blue;
+}
+
+#images {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+#githubimage {
+    width: 10%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#websiteimage {
+    width: 10%;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+}
+
+.workbox {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 550px;
+    box-shadow:none;
+    background-color: #191e29
+}
+
+.workbox:hover {
+    box-shadow: 0 0 5px white, inset 0 0 10px white;
+    background-color: #3a4253
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        margin-top: 0px;
+        color: aliceblue;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .text {
+        color: #a9aeb8;
+        padding-top: 0px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .workbox {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        height: 100px;
+        box-shadow:none;
+        background-color: #191e29
+    }
+
+    .workbox:hover {
+        box-shadow: 0 0 5px white, inset 0 0 10px white;
+        background-color: #3a4253
+    }
+  }
