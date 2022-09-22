@@ -4,7 +4,7 @@ import profileImage from '../images/sebPFP.png'
 
 function Aboutme(){
     return (
-        <div className='row'>
+        <div className='row' id='aboutmeBackground'>
             <div className='col'>
                 <img alt="My Profile Picture" className='profilePicture' src={profileImage} id="aboutmeLink"></img>
             </div>
