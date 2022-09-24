@@ -14,6 +14,15 @@
     padding-top: 5px;
     font-size: 20px;
     text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+#workHighLight {
+    font-weight: bold;
+    color: aliceblue;
 }
 
 #expand {
@@ -47,7 +56,7 @@
     margin-bottom: 50px;
     height: 550px;
     box-shadow:none;
-    background-color: #191e29
+    background-color: #191e29;
 }
 
 .workbox:hover {
@@ -68,12 +77,14 @@
         padding-top: 0px;
         font-size: 10px;
         text-align: center;
+        margin: 0%;
+        width: 100%;
     }
 
     .workbox {
         padding-top: 10px;
         margin-bottom: 10px;
-        height: 100px;
+        height: 150px;
         box-shadow:none;
         background-color: #191e29
     }
@@ -81,5 +92,12 @@
     .workbox:hover {
         box-shadow: 0 0 5px white, inset 0 0 10px white;
         background-color: #3a4253
+    }
+    
+    #websiteimage {
+        width: 10%;
+        position: absolute;
+        bottom: 30px;
+        right: 0px;
     }
   }

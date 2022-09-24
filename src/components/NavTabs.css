@@ -8,6 +8,7 @@ a {
     padding-top: 15px;
     background-color: #364052;
     width: 100%;
+    z-index: 1000
 }
 
 .NavItem {

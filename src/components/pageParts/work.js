@@ -18,14 +18,14 @@ function Work(){
 
             <div className='col'>
                 <div className='workbox'>
-                    <h2 className='text'>A quick weather app that tells you the weather of a city you search up, along side a five day forecast.</h2>
+                    <h2 className='text'><span id='workHighLight'>Weather App</span> is a simple app that tells you the weather of a city you search up, along side a five day forecast.</h2>
                     <img alt="Weather App"src={weatherimage} id="images"></img>
                     <a href='https://github.com/sw33ws/Weather-App'><img alt="Github link"src={github} id="githubimage"></img></a>
                     <a href='https://sw33ws.github.io/Weather-App/'><img alt="Github link"src={website} id="websiteimage"></img></a>
                 </div>
 
                 <div className='workbox'>
-                    <h2 className='text'>A lightweight travel companion to quickly gather information on hotels, and music in the city of your choice.</h2>
+                    <h2 className='text'><span id='workHighLight'>Zelda Travel Companion</span> is a a lightweight travel companion that can quickly gather information on hotels, local events and music in the city of your choice.</h2>
                     <img alt=""src={zeldaimage} id="images"></img>\
                     <a href='https://github.com/Ydennekrf/Zelda-Travel-App'><img alt="Github link"src={github} id="githubimage"></img></a>
                     <a href='https://ydennekrf.github.io/Zelda-Travel-App/'><img alt="Github link"src={website} id="websiteimage"></img></a>
@@ -34,14 +34,14 @@ function Work(){
             </div>
             <div className='col'>
                 <div className='workbox'>
-                    <h2 className='text'>This is a full stack app, that allows freelance developers to advertise their services, and for clients to buy a software dev.</h2>
+                    <h2 className='text'><span id='workHighLight'>GoldenDevs</span> is a freelance developer website that allows freelance developers to advertise their exertise, languages and experience. The website also allows for clinets to put up requsets for what they need.</h2>
                     <img alt="Freelance Developer Work"src={goldendevs} id="images"></img>
                     <a href='https://github.com/SuedePritch/fluffy-palm-tree'><img alt="Github link"src={github} id="githubimage"></img></a>
                     <a href='https://protected-peak-08029.herokuapp.com/'><img alt="Github link"src={website} id="websiteimage"></img></a>
                 </div>
 
                 <div className='workbox'>
-                    <h2 className='text'>A simple text editor that your can download, and have it save what you write</h2>
+                    <h2 className='text'><span id='workHighLight'>J.A.T.E</span> is a simple downloadable note book, that can be used, and saved online or offline</h2>
                     <img alt=""src={jadeimage} id="images"></img>
                     <a href='https://github.com/sw33ws/solid-pancake'><img alt="Github link"src={github} id="githubimage"></img></a>
                     <a href='https://mighty-hamlet-13053.herokuapp.com/'><img alt="Github link"src={website} id="websiteimage"></img></a>

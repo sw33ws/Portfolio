@@ -14,6 +14,7 @@
     color: #a9aeb8;
     padding-top: 10px;
     font-size: 20px;
+    width: 60%;
 }
 
 .profilePicture {
@@ -26,19 +27,26 @@
     #aboutMeTitle {
         margin-top: 0px;
         color: aliceblue;
-        padding-top: 50px;
+        padding-top: 0px;
         font-size: 15px;
     }
     
     #aboutMeText {
         color: #a9aeb8;
-        padding-top: 10px;
+        padding-top: 0px;
         font-size: 10px;
+        width: 100%;
     }
 
     .profilePicture {
         width: 50%;
         padding-top: 50px;
         align-items: center;
+    }
+
+    .profilePicture {
+        width: 100%;
+        padding-top: 50px;
+        float: left;
     }
   }

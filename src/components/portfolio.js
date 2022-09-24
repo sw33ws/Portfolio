@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import Aboutme from './pageParts/aboutme';
+
 import NavTabs from './NavTabs';
+
+import Aboutme from './pageParts/aboutme';
 import Work from './pageParts/work'
+import Skills from './pageParts/skills'
 
 function Portfolio(){
     return (
@@ -9,6 +12,7 @@ function Portfolio(){
             <NavTabs />
             <Aboutme />
             <Work />
+            <Skills />
         </div>
     )
 }
