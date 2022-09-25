@@ -1,6 +1,10 @@
 import React from 'react';
 import './contactinfo.css';
 
+import { useMutation } from '@apollo/client';
+
+import { ADD_Contact } from '../../utils/mutations';
+
 function Contact(){
     return (
         <div className='backgroundColorContact'>
