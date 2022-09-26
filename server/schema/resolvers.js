@@ -11,7 +11,7 @@ const resolvers = {
     Mutation: {
         addContact: async (parent, { name, email, message }) => {
             const contact = await Contact.create({ name, email, message });
-            return { contact}
+            return { contact }
         },
     }
 }

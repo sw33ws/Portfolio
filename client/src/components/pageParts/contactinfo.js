@@ -1,30 +1,44 @@
 import React from 'react';
 import './contactinfo.css';
 
-import { useMutation } from '@apollo/client';
+import { useMutation, gql } from '@apollo/client';
 
-import { ADD_Contact } from '../../utils/mutations';
+const ADD_CONTACT =gql`
+mutation Mutation($name: String!, $email: String!, $message: String!) {
+    addContact(name: $name, email: $email, message: $message) {
+      _id
+      name
+      email
+      message
+    }
+  }
+`
+const Contact = () => {
+    let name, email, message;
+    const [ contactInfo ] = useMutation(ADD_CONTACT);
 
-function Contact(){
     return (
         <div className='backgroundColorContact'>
-            <form id='contactInfoForm'>
-            <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" id='formBoxs'></input>
+            <form id='contactInfoForm' onSubmit={e => {
+                e.preventDefault();
+                contactInfo({ variables: { name: name.value, email: email.value, message: message.value }});
+            }}>
+            <div className="mb-3">
+                <label className="form-label">Name</label>
+                <input type="text" className="form-control" id='formBoxs' ref={value => name = value}></input>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" id='formBoxs'></input>
+            <div className="mb-3">
+                <label className="form-label">Email</label>
+                <input type="email" className="form-control" id='formBoxs' ref={value => email = value}></input>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="3" id='formBoxs'></textarea>
+            <div className="mb-3">
+                <label className="form-label">Message</label>
+                <textarea className="form-control" rows="3" id='formBoxs' ref={value => message = value}></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary"><span id='submitButton'>Submit</span></button>
+            <button type="submit" className="btn btn-primary"><span id='submitButton'>Submit</span></button>
             </form>
         </div>
     )
