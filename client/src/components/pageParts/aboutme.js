@@ -6,11 +6,11 @@ function Aboutme(){
     return (
         <div className='row g-2' id='aboutmeBackground'>
             <div className='col'>
-                <img alt="My Profile Picture" className='profilePicture' src={profileImage} id="Aboutme"></img>
+                <img alt='Me' className='profilePicture' src={profileImage} id="Aboutme"></img>
             </div>
 
             <div className='col'>
-                <h1 id="aboutMeTitle">Hello! I'm Sebastian Gillis</h1>
+                <h1 id="aboutMeTitle">Hello! <br></br>I'm Sebastian Gillis</h1>
                 <h2 id="aboutMeText">A back-end web developer with knowledge of databases and server-side development. 
                 Recently earned a certificat in full stack development from the University of Toronto SC Coding Boot Camp, 
                 with newly developed skills in JavaScript Express, Node.js, mySQl, noSql and MongoDb. I'm passionat about 

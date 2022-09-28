@@ -33,11 +33,18 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .backgroundColorContact {
+        background-color: #191e29;
+        padding-bottom: 50px;
+    }
+
     #contactInfoForm {
-        padding-left: 0px;
-        padding-right: 0px;
         padding-top: 50px;
-        background-color: #191e29;;
+        background-color: #191e29;
+        display: block;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
     }
 
     .form-label {
@@ -57,7 +64,7 @@
     }
     
     #formBoxs {
-        width: 100px;
+        width: 200px;
         height: 20px;
         
     }

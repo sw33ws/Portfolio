@@ -6,15 +6,16 @@ import Aboutme from './components/pageParts/aboutme';
 import Work from './components/pageParts/work';
 import Skills from './components/pageParts/skills';
 import Contact from './components/pageParts/contactinfo';
+import Footer from './components/pageParts/footer';
 
-import {ApolloClient,InMemoryCache,ApolloProvider,createHttpLink,} from '@apollo/client';
+import {ApolloClient,InMemoryCache,ApolloProvider,createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 // Construct our main GraphQL API endpoint
-// const httpLink = createHttpLink({
-//   uri: '/graphql',
-// });
-const httpLink = createHttpLink({uri: 'http://127.0.0.1:3001/graphql',cache: new InMemoryCache(),});
+const httpLink = createHttpLink({
+  uri: '/graphql',
+  credentials: 'include'
+})
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
@@ -44,6 +45,7 @@ function App() {
             <Work />
             <Skills />
             <Contact />
+            <Footer />
       </ApolloProvider>
     </div>
   );

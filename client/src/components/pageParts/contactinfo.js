@@ -18,13 +18,9 @@ const Contact = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-        try {
             await contactInfo ({
                 variables: { name: contactForm.name, email: contactForm.email, message: contactForm.message}
             });
-        } catch (e) {
-            console.log(e)
-        }
     };
     
 
