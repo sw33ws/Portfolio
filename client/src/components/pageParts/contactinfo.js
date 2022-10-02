@@ -3,7 +3,7 @@ import './contactinfo.css';
 
 import { useMutation, gql } from '@apollo/client';
 
-const ADD_CONTACT =gql`
+const ADD_CONTACT = gql`
 mutation AddContact($name: String!, $email: String!, $message: String!) {
     addContact(name: $name, email: $email, message: $message) {
       name
@@ -29,17 +29,17 @@ const Contact = () => {
             <form id='contactInfoForm' onSubmit={handleFormSubmit}>
             <div className="mb-3">
                 <label className="form-label">Name</label>
-                <input type="text" className="form-control" id='formBoxs' name='name'></input>
+                <input type="text" className="form-control" id='formBoxs name' name='name'></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Email</label>
-                <input type="email" className="form-control" id='formBoxs' name='email'></input>
+                <input type="email" className="form-control" id='formBoxs email' name='email'></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Message</label>
-                <textarea className="form-control" rows="3" id='formBoxs' name='message'></textarea>
+                <textarea className="form-control" rows="3" id='formBoxs message' name='message'></textarea>
             </div>
 
             <button type="submit" className="btn btn-primary"><span id='submitButton'>Submit</span></button>

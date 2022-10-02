@@ -13,7 +13,6 @@ function Work(){
         <div className='row' id='workbackground'>
             <div>
                 <h1 className='title' id='workLink'>Past Work</h1>
-                <h2 className='text'></h2>
             </div>
 
             <div className='col'>

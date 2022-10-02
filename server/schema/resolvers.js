@@ -1,5 +1,3 @@
-const { AuthenticationError } = require('apollo-server-express');
-
 const { Contact } = require('../models');
 
 const resolvers = {
@@ -9,10 +7,9 @@ const resolvers = {
         }
     },
     Mutation: {
-        addContact: async (parent, { name, email, message }) => {
-            const contact = await Contact.create({ name, email, message });
-            return { contact }
-        },
+        addContact: async ( parent, { name, email, message }) =>{
+            return await Contact.create({ name, email, message })
+          },
     }
 }
 
