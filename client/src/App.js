@@ -37,6 +37,7 @@ const client = new ApolloClient({
 });
 
 function App() {
+  console.log(window.location)
   return (
     <div className="portfolio">
       <ApolloProvider client={client}>
