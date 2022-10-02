@@ -14,7 +14,7 @@ mutation AddContact($name: String!, $email: String!, $message: String!) {
 `
 const Contact = () => {
     const [ contactInfo ] = useMutation(ADD_CONTACT);
-    const [ contactForm ] = useState({ name: '', email: '', message: ''});
+    const [ contactForm, setContactForm ] = useState({ name: '', email: '', message: ''});
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -22,24 +22,31 @@ const Contact = () => {
                 variables: { name: contactForm.name, email: contactForm.email, message: contactForm.message}
             });
     };
-    
 
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setContactForm({
+            ...contactForm,
+            [name]: value,
+        });
+    };
+    
     return (
         <div className='backgroundColorContact'>
             <form id='contactInfoForm' onSubmit={handleFormSubmit}>
             <div className="mb-3">
                 <label className="form-label">Name</label>
-                <input type="text" className="form-control" id='formBoxs name' name='name'></input>
+                <input type="text" className="form-control" id='formBoxs name' name='name' onChange={handleChange}></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Email</label>
-                <input type="email" className="form-control" id='formBoxs email' name='email'></input>
+                <input type="email" className="form-control" id='formBoxs email' name='email' onChange={handleChange}></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Message</label>
-                <textarea className="form-control" rows="3" id='formBoxs message' name='message'></textarea>
+                <textarea className="form-control" rows="3" id='formBoxs message' name='message' onChange={handleChange}></textarea>
             </div>
 
             <button type="submit" className="btn btn-primary"><span id='submitButton'>Submit</span></button>
