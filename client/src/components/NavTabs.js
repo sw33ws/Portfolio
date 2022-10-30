@@ -1,16 +1,26 @@
 import React from 'react';
 import './NavTabs.css';
 
+var x = window.matchMedia("(max-width: 1000px)")
+
 function AboutMe() {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 }
 
 function Work() {
-    window.scrollTo({top: 750, left: 0, behavior: 'smooth'});
+    if (x.matches) {
+        window.scrollTo({top: 200, left: 0, behavior: 'smooth'});
+    } else {
+        window.scrollTo({top: 750, left: 0, behavior: 'smooth'});
+    }
 }
 
 function Skills() {
-    window.scrollTo({top: 2000, left: 0, behavior: 'smooth'});
+    if (x.matches) {
+        window.scrollTo({top: 550, left: 0, behavior: 'smooth'});
+    } else {
+        window.scrollTo({top: 2000, left: 0, behavior: 'smooth'});
+    }
 }
 
 function Contact() {

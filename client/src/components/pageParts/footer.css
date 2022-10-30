@@ -1,23 +1,13 @@
 #backgroundFooter {
     background-color: #364052;
-    padding-bottom: 200px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footerImage {
-    width: 5%;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: absolute;
-    right: 50%;
-}
-
-#footerImageleft {
-    position: absolute;
-    right: 45%;
-}
-
-#footerImageright {
-    right: 55%;
+    width: 15%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -27,19 +17,7 @@
     }
     
     .footerImage {
-        width: 5%;
         padding-top: 15px;
         padding-bottom: 0px;
-        position: absolute;
-        right: 50%;
-    }
-    
-    #footerImageleft {
-        position: absolute;
-        right: 45%;
-    }
-    
-    #footerImageright {
-        right: 55%;
     }
   }

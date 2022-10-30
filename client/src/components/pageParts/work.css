@@ -5,14 +5,14 @@
 .title {
     margin-top: 100px;
     color: aliceblue;
-    font-size: 50px;
+    font-size: 4vw;
     text-align: center;
 }
 
 .text {
     color: #a9aeb8;
     padding-top: 5px;
-    font-size: 20px;
+    font-size: 1.3vw;
     text-align: center;
     display: block;
     justify-content: center;
@@ -50,7 +50,7 @@
     position: relative;
     padding-top: 50px;
     margin-bottom: 50px;
-    height: 550px;
+    height: 60vh;
     box-shadow:none;
     background-color: #191e29;
 }
@@ -60,27 +60,115 @@
     background-color: #3a4253
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .title {
-        margin-top: 0px;
+        margin-top: 50px;
         color: aliceblue;
-        font-size: 15px;
+        /* font-size: 25px; */
         text-align: center;
     }
     
     .text {
         color: #a9aeb8;
         padding-top: 0px;
-        font-size: 10px;
+        /* font-size: 1.3vw; */
         text-align: center;
-        margin: 0%;
-        width: 100%;
+        /* margin: 0%; */
+        /* width: 100%; */
     }
 
     .workbox {
+        padding-top: 25px;
+        margin-bottom: 25px;
+        height: 30vh;
+        box-shadow:none;
+        background-color: #191e29
+    }
+
+    .workbox:hover {
+        box-shadow: 0 0 5px white, inset 0 0 10px white;
+        background-color: #3a4253
+    }
+    
+    #websiteimage {
+        width: 10%;
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .title {
+        margin-top: 25px;
+        color: aliceblue;
+        /* font-size: 15px; */
+        text-align: center;
+    }
+    
+    .text {
+        color: #a9aeb8;
+        padding-top: 0px;
+        /* font-size: 10px; */
+        text-align: center;
+        /* margin: 0%;
+        width: 100%; */
+    }
+
+    .workbox {
+        /* padding-top: 10px; */
+        margin-bottom: 10px;
+        height: 25vh;
+        box-shadow:none;
+        background-color: #191e29
+    }
+
+    .workbox:hover {
+        box-shadow: 0 0 5px white, inset 0 0 10px white;
+        background-color: #3a4253
+    }
+    
+    #websiteimage {
+        width: 10%;
+        position: absolute;
+        bottom: 30px;
+        right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .title {
+        margin-top: 15px;
+        color: aliceblue;
+        /* font-size: 15px; */
+        text-align: center;
+    }
+    .workbox {
         padding-top: 10px;
         margin-bottom: 10px;
-        height: 150px;
+        height: 20vh;
+        box-shadow:none;
+        background-color: #191e29
+    }
+
+    .workbox:hover {
+        box-shadow: 0 0 5px white, inset 0 0 10px white;
+        background-color: #3a4253
+    }
+    
+    #websiteimage {
+        width: 10%;
+        position: absolute;
+        bottom: 30px;
+        right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .workbox {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        height: 15vh;
         box-shadow:none;
         background-color: #191e29
     }
