@@ -1,25 +1,78 @@
+#backgroundcolor-work {
+    background-color: #191e29;
+}
+
 #workbackground {
     background-color: #191e29;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .title {
     margin-top: 100px;
     color: aliceblue;
-    font-size: 4vw;
+    font-size: 4.5rem;
     text-align: center;
+}
+
+.sub-title {
+    color: aliceblue;
+    font-weight: 600;
 }
 
 .text {
     color: #a9aeb8;
-    padding-top: 5px;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     text-align: center;
     display: block;
     justify-content: center;
-    margin: auto;
-    width: 50%;
 }
 
+.project-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 4rem;
+}
+
+.projects {
+    padding: 5px;
+    background-color: #191e29;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.projects:hover {
+    box-shadow: 0 0 5px white, inset 0 0 10px white;
+    background-color: #3a4253
+}
+
+.project-image-background {
+    width: 100%;
+    height: auto
+}
+
+.project-items:hover {
+    opacity: 100;
+}
+
+.project-github {
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-website {
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* 
 #workHighLight {
     font-weight: bold;
     color: aliceblue;
@@ -64,17 +117,13 @@
     .title {
         margin-top: 50px;
         color: aliceblue;
-        /* font-size: 25px; */
         text-align: center;
     }
     
     .text {
         color: #a9aeb8;
         padding-top: 0px;
-        /* font-size: 1.3vw; */
         text-align: center;
-        /* margin: 0%; */
-        /* width: 100%; */
     }
 
     .workbox {
@@ -102,21 +151,16 @@
     .title {
         margin-top: 25px;
         color: aliceblue;
-        /* font-size: 15px; */
         text-align: center;
     }
     
     .text {
         color: #a9aeb8;
         padding-top: 0px;
-        /* font-size: 10px; */
         text-align: center;
-        /* margin: 0%;
-        width: 100%; */
     }
 
     .workbox {
-        /* padding-top: 10px; */
         margin-bottom: 10px;
         height: 25vh;
         box-shadow:none;
@@ -140,7 +184,6 @@
     .title {
         margin-top: 15px;
         color: aliceblue;
-        /* font-size: 15px; */
         text-align: center;
     }
     .workbox {
@@ -184,4 +227,4 @@
         bottom: 30px;
         right: 0px;
     }
-  }
+  } */
