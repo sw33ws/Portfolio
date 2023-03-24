@@ -20,6 +20,8 @@ function Skills(){
                     <li className='listItems'>MySQL</li>
                     <li className='listItems'>GraphicQL</li>
                     <li className='listItems'>React</li>
+                    <li className='listItems'>Docker</li>
+                    <li className='listItems'>Python</li>
                 </div>
             </h2>
             </div>

@@ -1,0 +1,102 @@
+:root {
+    --background-nav: white;
+    --navtext: black;
+    --navtext-sub: #696969;
+    --warm-orange: #FFA500;
+}
+
+.Nav {
+    background-color: var(--background-nav);
+}
+
+.Link-Styles {
+    color: var(--navtext-sub);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.Link-Styles:hover {
+    color: var(--warm-orange);
+}
+
+.NavItem {
+    display: inline;
+    padding-right: 50px;
+    font-size: 2rem;
+}
+
+.Nav-title {
+    color: var(--navtext);
+}
+
+#Navline {
+    border-left: 6px solid var(--navtext-sub);
+    border-width: thin;
+}
+
+.hamburger-menu {
+    display: inline;
+}
+
+.Nav-Sub-Title {
+    color: var(--navtext-sub);
+}
+
+/* hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--navtext);
+}
+
+@media(max-width:950px) {
+    .hamburger{
+        display: block;
+        float: right;
+        padding: 15px;
+    }
+
+    /* This changes the hamburger to an X */
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #Navline {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hamburger-item {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+
+    .Nav.active {
+        background-color: aliceblue;
+    }
+}

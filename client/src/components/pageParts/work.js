@@ -6,7 +6,7 @@ import website from '../images/websiteicon.png'
 import weatherimage from '../images/weather.png'
 import goldendevs from '../images/goldendev.png'
 import zeldaimage from '../images/zelda-logo.jpg'
-import jadeimage from '../images/jadelogo.png'
+import downloads from '../images/downloads.png'
 
 function Work(){
     return(
@@ -40,10 +40,10 @@ function Work(){
                 </div>
 
                 <div className='workbox'>
-                    <h2 className='text'><span id='workHighLight'>J.A.T.E</span> is a simple downloadable notebook that can be used and saved online or offline</h2>
-                    <img alt=""src={jadeimage} id="images"></img>
-                    <a href='https://github.com/sw33ws/solid-pancake'><img alt="Github link"src={github} id="githubimage"></img></a>
-                    <a href='https://mighty-hamlet-13053.herokuapp.com/'><img alt="Github link"src={website} id="websiteimage"></img></a>
+                    <h2 className='text'><span id='workHighLight'>Download Page</span> is a simple download page where you can check out and download my projects</h2>
+                    <img alt=""src={downloads} id="images"></img>
+                    <a href='https://github.com/sw33ws/My-Download-Page'><img alt="Github link"src={github} id="githubimage"></img></a>
+                    <a href='https://sw33ws.github.io/My-Download-Page/'><img alt="Github link"src={website} id="websiteimage"></img></a>
                 </div>
             </div>
         </div>

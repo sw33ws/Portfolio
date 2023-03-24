@@ -1,12 +1,18 @@
 import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import NavTabs from './components/NavTabs'
+import NavTabs from './components/oldnav/NavTabs'
 import Aboutme from './components/pageParts/aboutme';
 import Work from './components/pageParts/work';
 import Skills from './components/pageParts/skills';
 import Contact from './components/pageParts/contactinfo';
 import Footer from './components/pageParts/footer';
+
+// import Navbar from './components/Navbar'
+// import Home from './components/UpdatedPageParts/home'
+// import Projects from './components/UpdatedPageParts/projects'
+// import Contact from './components/UpdatedPageParts/contact'
 
 import {ApolloClient,InMemoryCache,ApolloProvider,createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
@@ -46,6 +52,16 @@ function App() {
             <Skills />
             <Contact />
             <Footer />
+
+            {/* <Router>
+            <Navbar />
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='projects' element={<Projects />} />
+                <Route path='contact' element={<Contact />} />
+              </Routes>
+            </Router> */}
+
       </ApolloProvider>
     </div>
   );
