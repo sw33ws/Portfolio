@@ -1,9 +1,51 @@
-#skillsbackgroundcolor {
+.skills-background {
     background-color: #191e29;
-    padding-bottom: 10px;
+    padding-top: 10rem;
 }
 
-.title1 {
+#skillsbackgroundcolor {
+    background-color: #191e29;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.Skills {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.skills-card {
+    background-color: #3a4253;
+}
+
+.skills-title {
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.languages-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 25px;
+
+}
+
+.applications-skills {
+    font-size: 25px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    color: #a9aeb8;
+}
+
+/* .title1 {
     padding-top: 4vh;
     color: aliceblue;
     font-size: 4vw;
@@ -49,10 +91,7 @@
 
 @media only screen and (max-width: 700px) {
     .title1 {
-        /* padding-top: 10px; */
-        /* margin-top: 0px; */
         color: aliceblue;
-        /* font-size: 15px; */
         text-align: center;
     }
     
@@ -67,7 +106,6 @@
     #skillsHighLight {
         color: aliceblue;
         text-align: center;
-        /* font-size: 10px; */
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -75,14 +113,11 @@
     .listbox {
         background-color: #3a4253;
         height: 30vw;
-        /* margin-left: 10px;
-        margin-right: 10px; */
     }
 
     .listItems {
-        /* padding-top: 4px; */
         display: flex;
         align-items: center;
         justify-content: center;
     }
-  }
+  } */

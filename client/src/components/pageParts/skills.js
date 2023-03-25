@@ -3,43 +3,36 @@ import './skills.css';
 
 function Skills(){
     return (
-        <div id='skillsbackgroundcolor' className='row'>
-            <h1 className='title1'>Skills</h1>
-
-            <div className='col d-none d-md-block'></div>
-
-            <div className='col'>
-                <div className='listbox'>
-            <h2 className='text1'><span id="skillsHighLight">Languages</span> 
-                <div className='grid'>
-                    <li className='listItems'>HTML5</li>
-                    <li className='listItems'>CSS</li>
-                    <li className='listItems'>Javascript</li>
-                    <li className='listItems'>Node Js</li>
-                    <li className='listItems'>MongoDB</li>
-                    <li className='listItems'>MySQL</li>
-                    <li className='listItems'>GraphicQL</li>
-                    <li className='listItems'>React</li>
-                    <li className='listItems'>Docker</li>
-                    <li className='listItems'>Python</li>
+        <div className='skills-background' id='Skills'>
+        <div id='skillsbackgroundcolor'>
+            <div className='Skills'>
+                <div className='skills-card'>
+                    <h1 className='skills-title'>Languages</h1>
+                    <ul className='languages-skills'>
+                        <li className='list-item'>HTML5</li>
+                        <li className='list-item'>CSS</li>
+                        <li className='list-item'>Javascript</li>
+                        <li className='list-item'>Node Js</li>
+                        <li className='list-item'>MongoDB</li>
+                        <li className='list-item'>MySQL</li>
+                        <li className='list-item'>GraphicQL</li>
+                        <li className='list-item'>React</li>
+                        <li className='list-item'>Docker</li>
+                        <li className='list-item'>Python</li>
+                    </ul>
                 </div>
-            </h2>
-            </div>
-            </div>
-
-            <div className='col'>
-                <div className='listbox'>
-            <h2 className='text1'><span id="skillsHighLight">Applications</span>
-                    <li className='listItems'>BootStrap</li>
-                    <li className='listItems'>Express</li>
-                    <li className='listItems'>JQuery</li>
-                    <li className='listItems'>TailWind</li>
-            </h2>
-            </div>
+                <div className='skills-card'>
+                <h1 className='skills-title'>Applications</h1>
+                    <ul className='applications-skills'>
+                        <li className='list-item'>BootStrap</li>
+                        <li className='list-item'>Express</li>
+                        <li className='list-item'>JQuery</li>
+                        <li className='list-item'>TailWind</li>
+                    </ul>
+                </div>
             </div>
 
-            <div className='col d-none d-md-block'></div>
-
+        </div>
         </div>
     )
 }

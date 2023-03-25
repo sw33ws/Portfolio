@@ -1,8 +1,3 @@
-a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-
 .NavTab {
     position: fixed;
     padding-top: 15px;
@@ -13,14 +8,24 @@ a {
 
 .NavItem {
     color: #a9aeb8;
-    display: inline;
+    display: inline-block;
     padding-right: 50px;
     font-size: 25px;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+
 #line {
     border-left: 6px solid #626772;
     border-width: thin;
+}
+
+#hiddentext {
+    color: #364052;
 }
 
 #Me {
@@ -29,7 +34,7 @@ a {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 850px) {
     .NavTab {
         position: fixed;
         background-color: #364052;
@@ -38,7 +43,7 @@ a {
     
     .NavItem {
         color: #a9aeb8;
-        display: inline;
+        display: inline-block;
         padding-right: 10px;
         font-size: 15px;
     }
@@ -64,7 +69,7 @@ a {
     
     .NavItem {
         color: #a9aeb8;
-        display: inline;
+        display: inline-block;
         padding-right: 10px;
         font-size: 10px;
     }

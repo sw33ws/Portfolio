@@ -32,7 +32,7 @@ const Contact = () => {
     };
     
     return (
-        <div className='backgroundColorContact'>
+        <div className='backgroundColorContact' id='Contact'>
             <form id='contactInfoForm' onSubmit={handleFormSubmit}>
             <div className="mb-3">
                 <label className="form-label">Name</label>

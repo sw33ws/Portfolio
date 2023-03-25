@@ -11,7 +11,7 @@ import downloads from '../images/download.png'
 
 function Work(){
     return(
-        <div id='backgroundcolor-work'>
+        <div className='backgroundcolor-work' id='Work'>
         <div className='row' id='workbackground'>
             <div>
                 <h1 className='title' id='workLink'>Past Work</h1>
