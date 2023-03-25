@@ -19,14 +19,39 @@
 .about-title {
     color: aliceblue;
     font-size: 4.5rem;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .about-text {
     color: #a9aeb8;
     padding-top: 10px;
     font-size: 1.2rem;
-    word-wrap: break-word
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 700px) {
+    .aboutme-body {
+        background-color: #232833;
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 4rem;
+    }
+    .about-title {
+        color: aliceblue;
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+    .about-text {
+        color: #a9aeb8;
+        padding-top: 10px;
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+    .profile-picture {
+        width: 300px;
+    }
 }
 
 /* #Aboutme {

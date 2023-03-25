@@ -26,7 +26,11 @@ a {
     color: inherit;
     text-decoration: inherit;
     cursor: pointer;
-  }
+}
+
+a.active {
+    color: #FFA500;
+}
 
 #line {
     border-left: 6px solid #626772;
