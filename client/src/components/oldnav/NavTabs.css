@@ -3,14 +3,23 @@
     padding-top: 15px;
     background-color: #364052;
     width: 100%;
-    z-index: 1000
+    z-index: 1000;
+}
+
+.NavTab ul {
+    display: flex;
+   list-style: none; 
 }
 
 .NavItem {
     color: #a9aeb8;
     display: inline-block;
-    padding-right: 50px;
-    font-size: 25px;
+    margin-right: 50px;
+    font-size: 1.4rem;
+}
+
+.NavItem:hover {
+    color: #FFA500;
 }
 
 a {
@@ -30,58 +39,58 @@ a {
 
 #Me {
     color: aliceblue;
-    padding-right: 50px;
     font-weight: 600;
 }
 
-@media only screen and (max-width: 850px) {
-    .NavTab {
-        position: fixed;
-        background-color: #364052;
-        width: 100%;
-    }
-    
-    .NavItem {
-        color: #a9aeb8;
-        display: inline-block;
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #a9aeb8;
+}
+
+@media(max-width:950px) {
+    .hamburger{
+        display: block;
         padding-right: 10px;
-        font-size: 15px;
     }
 
-    #line {
-        border-left: 6px solid #626772;
-        border-width: thin;
+    /* This changes the hamburger to an X */
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
     }
 
-    #Me {
-        color: aliceblue;
-        padding-right: 15px;
-        font-weight: 600;
-    }
-  }
-
-  @media only screen and (max-width: 384px) {
-    .NavTab {
-        position: fixed;
-        background-color: #364052;
-        width: 100%;
-    }
-    
-    .NavItem {
-        color: #a9aeb8;
-        display: inline-block;
-        padding-right: 10px;
-        font-size: 10px;
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
     }
 
-    #line {
-        border-left: 6px solid #626772;
-        border-width: thin;
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
 
-    #Me {
-        color: aliceblue;
-        padding-right: 10px;
-        font-weight: 600;
+    #Navline {
+        display: none;
+        cursor: pointer;
     }
-  }
+
+    .hamburger-item {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+}

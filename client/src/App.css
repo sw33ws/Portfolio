@@ -1,4 +1,8 @@
-.App {
+.portfolio {
+  overflow: auto;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +39,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* colors used */
 /* Website background #232833 */

@@ -19,12 +19,14 @@
 .about-title {
     color: aliceblue;
     font-size: 4.5rem;
+    word-wrap: break-word
 }
 
 .about-text {
     color: #a9aeb8;
     padding-top: 10px;
     font-size: 1.2rem;
+    word-wrap: break-word
 }
 
 /* #Aboutme {
