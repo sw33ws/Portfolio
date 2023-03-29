@@ -21,6 +21,9 @@ const Contact = () => {
             await contactInfo ({
                 variables: { name: contactForm.name, email: contactForm.email, message: contactForm.message}
             });
+        document.querySelector(".name").value = "";
+        document.querySelector(".email").value = "";
+        document.querySelector(".message").value = "";
     };
 
     const handleChange = (event) => {
@@ -36,17 +39,17 @@ const Contact = () => {
             <form id='contactInfoForm' onSubmit={handleFormSubmit}>
             <div className="mb-3">
                 <label className="form-label">Name</label>
-                <input type="text" className="form-control" id='formBoxs name' name='name' onChange={handleChange}></input>
+                <input type="text" className="form-control name" id='formBoxs name' name='name' onChange={handleChange}></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Email</label>
-                <input type="email" className="form-control" id='formBoxs email' name='email' onChange={handleChange}></input>
+                <input type="email" className="form-control email" id='formBoxs email' name='email' onChange={handleChange}></input>
             </div>
 
             <div className="mb-3">
                 <label className="form-label">Message</label>
-                <textarea className="form-control" rows="3" id='formBoxs message' name='message' onChange={handleChange}></textarea>
+                <textarea className="form-control message" rows="3" id='formBoxs message' name='message' onChange={handleChange}></textarea>
             </div>
 
             <button type="submit" className="btn btn-primary"><span id='submitButton'>Submit</span></button>
