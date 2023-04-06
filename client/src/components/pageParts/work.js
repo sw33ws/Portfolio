@@ -8,6 +8,8 @@ import goldendevs from '../images/goldendev.png'
 import zeldaimage from '../images/zelda-logo.jpg'
 // import downloads from '../images/downloads.png'
 import downloads from '../images/download.png'
+import ai from '../images/ai.png'
+import calculator from '../images/calculator.png'
 
 function Work(){
     return(
@@ -45,6 +47,19 @@ function Work(){
                         <a href='https://github.com/sw33ws/My-Download-Page'><img alt='something' className='project-github' src={github}></img></a>
                         <a href='https://sw33ws.github.io/My-Download-Page/'><img alt='something' className='project-website' src={website}></img></a>
                     <img alt="DownLoad Page"src={downloads} className="project-image-background"></img>
+                </div>
+
+                <div className='projects'>
+                        <h1 className='text'><span className='sub-title'>ChatGPT Voice Assistant</span> is a python that takes in user audio, converts it to text, and then reads the response back to you!</h1>
+                        <a href='https://github.com/sw33ws/ChatGPT-Voice-Assistant'><img alt='something' className='project-github' src={github}></img></a>
+                        {/* <a href='https://sw33ws.github.io/My-Download-Page/'><img alt='something' className='project-website' src={website}></img></a> */}
+                    <img alt="DownLoad Page"src={ai} className="project-image-background"></img>
+                </div>
+                <div className='projects'>
+                        <h1 className='text'><span className='sub-title'>ChatGPT Voice Assistant</span> is a python that takes in user audio, converts it to text, and then reads the response back to you!</h1>
+                        <a href='https://github.com/sw33ws/Calculator'><img alt='something' className='project-github' src={github}></img></a>
+                        <a href='https://sw33ws.github.io/Calculator/'><img alt='something' className='project-website' src={website}></img></a>
+                    <img alt="DownLoad Page"src={calculator} className="project-image-background"></img>
                 </div>
             </div>
         </div>
