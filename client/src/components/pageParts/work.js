@@ -55,12 +55,14 @@ function Work(){
                         {/* <a href='https://sw33ws.github.io/My-Download-Page/'><img alt='something' className='project-website' src={website}></img></a> */}
                     <img alt="DownLoad Page"src={ai} className="project-image-background"></img>
                 </div>
+
                 <div className='projects'>
                         <h1 className='text'><span className='sub-title'>Calculator</span> is a simple calculator, with a dark/light mode added in!</h1>
                         <a href='https://github.com/sw33ws/Calculator'><img alt='something' className='project-github' src={github}></img></a>
                         <a href='https://sw33ws.github.io/Calculator/'><img alt='something' className='project-website' src={website}></img></a>
                     <img alt="DownLoad Page"src={calculator} className="project-image-background"></img>
                 </div>
+                
             </div>
         </div>
         </div>
