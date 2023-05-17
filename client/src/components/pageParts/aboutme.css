@@ -1,10 +1,12 @@
 #Aboutme {
-    background-color: #232833;
+    /* background-color: #232833; */
+    background-color: #0e0d0b;
     padding-top: 160px;
 }
 
 .aboutme-body {
-    background-color: #232833;
+    /* background-color: #232833; */
+    background-color: #0e0d0b;
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -17,13 +19,21 @@
 }
 
 .about-title {
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: #efeeeb;
     font-size: 4.5rem;
     word-wrap: break-word;
 }
 
+.gradient-title {
+    background: linear-gradient(120deg, #8ef1df, #0a4ac2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .about-text {
-    color: #a9aeb8;
+    /* color: #a9aeb8; */
+    color: #efeeeb;
     padding-top: 10px;
     font-size: 1.2rem;
     word-wrap: break-word;

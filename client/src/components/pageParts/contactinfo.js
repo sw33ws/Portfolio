@@ -36,6 +36,7 @@ const Contact = () => {
     
     return (
         <div className='backgroundColorContact' id='Contact'>
+            <h1 className='Contact-title'><span className='gradient-title'>Contact Me!</span></h1>
             <form id='contactInfoForm' onSubmit={handleFormSubmit}>
             <div className="mb-3">
                 <label className="form-label">Name</label>
@@ -52,7 +53,7 @@ const Contact = () => {
                 <textarea className="form-control message" rows="3" id='formBoxs message' name='message' onChange={handleChange}></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary"><span id='submitButton'>Submit</span></button>
+            <button type="submit" className="form-button"><span id='submitButton'>Submit</span></button>
             </form>
         </div>
     )

@@ -1,12 +1,14 @@
 .skills-background {
-    background-color: #191e29;
-    padding-top: 10rem;
+    /* background-color: #191e29; */
+    background-color: #0e0d0b;
+    padding-top: 5rem;
 }
 
 #skillsbackgroundcolor {
-    background-color: #191e29;
+    /* background-color: #191e29; */
+    background-color: #0e0d0b;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 }
 
 .Skills {
@@ -17,14 +19,18 @@
 }
 
 .skills-card {
-    background-color: #3a4253;
+    /* background-color: #3a4253; */
+    background-color: #ffffff;
     font-size: 25px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .skills-title {
     text-align: center;
     font-weight: 600;
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: #100f0c;
 }
 
 .languages-skills {
@@ -43,7 +49,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    color: #a9aeb8;
+    /* color: #a9aeb8; */
+    color: #100f0c;
 }
 
 @media only screen and (max-width: 700px) {

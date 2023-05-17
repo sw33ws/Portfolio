@@ -1,7 +1,8 @@
 .NavTab {
     position: fixed;
     padding-top: 15px;
-    background-color: #364052;
+    /* background-color: #364052; */
+    background-color: #0e0d0b;
     width: 100%;
     z-index: 1000;
 }
@@ -12,14 +13,16 @@
 }
 
 .NavItem {
-    color: #a9aeb8;
+    /* color: #a9aeb8; */
+    color: #efeeeb;
     display: inline-block;
     margin-right: 50px;
     font-size: 1.4rem;
 }
 
 .NavItem:hover {
-    color: #FFA500;
+    /* color: #FFA500; */
+    color: #efeeeb;
 }
 
 a {
@@ -29,7 +32,8 @@ a {
 }
 
 a.active {
-    color: #FFA500;
+    /* color: #FFA500; */
+    color: #efeeeb;
 }
 
 #line {
@@ -38,11 +42,12 @@ a.active {
 }
 
 #hiddentext {
-    color: #364052;
+    visibility: hidden;
 }
 
 #Me {
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: #8ef1df;
     font-weight: 600;
 }
 
