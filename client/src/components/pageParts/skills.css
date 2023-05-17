@@ -18,6 +18,7 @@
 
 .skills-card {
     background-color: #3a4253;
+    font-size: 25px;
 }
 
 .skills-title {
@@ -29,7 +30,7 @@
 .languages-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 25px;
+    /* font-size: 25px; */
 
 }
 

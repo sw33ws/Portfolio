@@ -17,8 +17,8 @@ function Skills(){
                         <li className='list-item'>MySQL</li>
                         <li className='list-item'>GraphicQL</li>
                         <li className='list-item'>React</li>
-                        <li className='list-item'>Docker</li>
                         <li className='list-item'>Python</li>
+                        <li className='list-item'>Java</li>
                     </ul>
                 </div>
                 <div className='skills-card'>
@@ -28,6 +28,7 @@ function Skills(){
                         <li className='list-item'>Express</li>
                         <li className='list-item'>JQuery</li>
                         <li className='list-item'>TailWind</li>
+                        <li className='list-item'>Docker</li>
                     </ul>
                 </div>
             </div>
