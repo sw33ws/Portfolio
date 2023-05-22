@@ -13,8 +13,10 @@
 
 .Skills {
     padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 
@@ -24,6 +26,7 @@
     font-size: 25px;
     padding: 15px;
     border-radius: 15px;
+    flex-basis: 30rem;
 }
 
 .skills-title {
@@ -36,12 +39,11 @@
 .languages-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* font-size: 25px; */
-
+    padding-left: 0;
 }
 
 .applications-skills {
-    font-size: 25px;
+    padding-left: 0;
 }
 
 .list-item {
@@ -56,9 +58,19 @@
 @media only screen and (max-width: 700px) {
     .Skills {
         padding: 0rem 0rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
+    }
+    .skills-card {
+        /* background-color: #3a4253; */
+        background-color: #ffffff;
+        font-size: 15px;
+        padding: 15px;
+        border-radius: 15px;
+        flex-basis: 0;
     }
 }
 
