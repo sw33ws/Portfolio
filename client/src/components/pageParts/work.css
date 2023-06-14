@@ -37,7 +37,7 @@
     opacity: 40%;
     position: absolute;
     transition: all 0.3s ease;
-    background: linear-gradient(180deg, transparent 50%, #0a4ac2 50%);
+    background: linear-gradient(180deg, transparent 50%, #8ef1df 50%);
     bottom: 0;
     right: 0;
 }
