@@ -9,13 +9,15 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
+    cursor: auto;
 }
 
 .footerImage {
-    max-width: 100%;
+    max-width: 50%;
     display: block;
     min-height: 25px;
     max-height: 100px;
     margin: 1rem 0;
     justify-content: flex-end;
+    cursor: pointer;
 }
